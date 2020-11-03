@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load static %}
+    <title>Belgin_Resume</title>
+
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="The Curriculum Vitae of Belgin."
+    />
+    <meta charset="UTF-8" />
+
+    <link
+      href="http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/static/css/style.css"
+    />
+
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body id="top">
+    <div id="cv" class="instaFade">
+      <div class="mainDetails">
+        <div id="headshot" class="quickFade">
+          <img
+            src="/static/images/belgin_dp.jpg"
+            alt="Belgin"
+          />
+        </div>
+
+        <div id="name">
+          <h1 class="quickFade delayTwo">Belgin M.</h1>
+          <h2 class="quickFade delayThree">Project Associate at Cognizant</h2>
+        </div>
+
+        <div id="contactDetails" class="quickFade delayFour">
+          <ul>
+            <li>
+              <a href="mailto:belginmoses12@gmail.com">
+                <u>belginmoses12@gmail.com</u>
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'Resume' %}">
+                <u> Portfolio : Belgin </u></a
+              >
+            </li>
+            <li>(+91)9840306874</li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/belgin-moses-762b9876/"
+              >
+                <u> Linked In : Belgin </u></a
+              >
+            </li>
+            <li>Skype ID : live:97ca6a09ee365448</li>
+            <li>
+              <a href="https://github.com/belginmoses">
+                <u>Github:belginmoses</u>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="mainArea" class="quickFade delayFive">
+        <section>
+          <article>
+            <div class="sectionTitle">
+              <h1>Personal Profile</h1>
+            </div>
+
+            <div class="sectionContent">
+              <ul>
+                <li>
+                  Highly motivated IT professional majorly with 4.5+ years of
+                  experience.
+                </li>
+                <li>
+                  Eager to work and learn various aspects of product development
+                  and maintenance.
+                </li>
+                <li>
+                  Also wish to acquire leadership skills while rubbing shoulders
+                  with experienced folks.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <div class="clear"></div>
+        </section>
+        <br />
+
+        <section>
+          <div class="sectionTitle">
+            <h1>Work Experience</h1>
+          </div>
+
+          <div class="sectionContent">
+            <article>
+              <h2>Project Associate, Cognizant</h2>
+              <p class="subDetails">February 2019 - Present</p>
+              <li>Python-Flask Rest API development.</li>
+              <li>Python-Django Reporting application development.</li>
+              <li>Node JS backend API integration.</li>
+              <li>Automating end-to-end processes using UI path RPA tool.</li>
+              <li>
+                Responsibility to automate end to end process using
+                python-selenium, Javascript, C# and SQL server and AssistEdge
+                RPA Framework.
+              </li>
+            </article>
+            <br />
+            <article>
+              <h2>Senior System Engineer, Infosys</h2>
+              <p class="subDetails">October 2015 - January 2019</p>
+              <ul>
+                <li>
+                  Worked closely with other departmental peers to develop high
+                  availability solutions for mission-critical applications.
+                </li>
+                <li>
+                  Performed requirement gathering, feasibility check and
+                  calculated timeline.
+                </li>
+                <li>
+                  Worked with team members to create applications system
+                  analysis based upon client requirements.
+                </li>
+                <li>
+                  Created Design Documents (TO-BE) based on clients' AS-IS
+                  documents, Deployment documents, Operational Quality
+                  documents, Defect Tracker, etc.
+                </li>
+                <li>
+                  Performed all testing and troubleshooting methods and
+                  documented resolutions in the system.
+                </li>
+              </ul>
+            </article>
+            <br />
+          </div>
+          <div class="clear"></div>
+        </section>
+
+        <br />
+
+        <section>
+          <div class="sectionTitle">
+            <h1>Projects</h1>
+          </div>
+
+          <div class="sectionContent">
+            <article>
+              <h2>Esignature - Sprint</h2>
+              <p class="subDetails"><strong>Python OpenSpan project</strong></p>
+              <ul>
+                <li>
+                  Python script triggered by an C# executable based outlook
+                  monitor.
+                </li>
+                <li>
+                  Python script gathers info and download forms from web
+                  application : Sprint [Client proprietory] by webscraping using
+                  selenium module.
+                </li>
+                <li>
+                  Gathered data from sprint is used to make API request to
+                  OpenSpan.
+                </li>
+                <li>
+                  Making request to openspan creates package sent to end user
+                  for e-signature.
+                </li>
+                <li>
+                  Upon completion of e-signature details sent to manager for
+                  approval.
+                </li>
+              </ul>
+            </article>
+            <br />
+            <article>
+              <h2>Esignature - Reporting</h2>
+              <p class="subDetails"><strong>Python Django reporting</strong></p>
+              <ul>
+                <li>
+                  Python-Django-PostgreSQL based web application for reporting
+                  and tracking loan workflow.
+                </li>
+                <li>
+                  This application fetches loan related details from a
+                  PostgreSQL DB to a python-django framework via SQLAlchemy ORM.
+                </li>
+                <li>
+                  Fetched details from DB is then displayed on a frontend
+                  HTML-CSS-JS page for tracking purpose.
+                </li>
+              </ul>
+            </article>
+            <br />
+            <article>
+              <h2>Application health check</h2>
+              <p class="subDetails"><strong>Node JS</strong></p>
+              <ul>
+                <li>
+                  NodeJS based app hosted on a load balanced server used to keep
+                  track of client proprietory internal applications.
+                </li>
+                <li>
+                  This app provides an html-css-js based local strategy
+                  authentication system page that lets client LOB users login
+                  and register.
+                </li>
+                <li>
+                  LOB users then can register an 'web app link' on the app.
+                </li>
+                <li>
+                  The app will keep tracking the health of the web app and send
+                  mail to the corresponding LOB users upon status change.
+                </li>
+              </ul>
+            </article>
+            <br />
+            <article>
+              <h2>Insurance Data Entry Automation</h2>
+              <p class="subDetails"><strong>Python RPA automation</strong></p>
+              <ul>
+                <li>Client is an insurance broker.</li>
+                <li>
+                  All insurance issued to customer details are recorded into DB
+                  by othe applciations usning OCR and IVR.
+                </li>
+                <li>
+                  This automation application consists of a C# executable
+                  scheduled in a windows task scheduer.
+                </li>
+                <li>
+                  The executable sends json request to Rabbit MQ on intervals
+                  collecting new data from DB.
+                </li>
+                <li>
+                  The new data is then fetched by an AssistEdge bot and passed
+                  on to python script to load them into a web application based
+                  on certain business rules.
+                </li>
+              </ul>
+            </article>
+            <br />
+            <article>
+              <h2>Client Profile</h2>
+              <p class="subDetails">
+                <strong>Python UIpath automation</strong>
+              </p>
+              <ul>
+                <li>LOB uses PPT to pitch proposals to business entities.</li>
+                <li>
+                  These PPTs contain facts and data based on business entities
+                  specially catered to their needs.
+                </li>
+                <li>
+                  These PPTs are prepared by gathering info from various fixed
+                  configured sources on a fixed PPT template.
+                </li>
+                <li>
+                  LOB registers a request on a sharepoint site ad those requests
+                  are picked up bots.
+                </li>
+                <li>
+                  Bot then gathers data, creates PPT and loads to the
+                  sharepoint.
+                </li>
+              </ul>
+            </article>
+          </div>
+          <div class="clear"></div>
+        </section>
+
+        <br />
+
+        <br />
+
+        <section>
+          <div class="sectionTitle">
+            <h1>Personal Projects</h1>
+          </div>
+
+          <div class="sectionContent">
+            <article>
+              <h2>Python-Django web application</h2>
+              <p class="subDetails">
+                <a href="http://68.183.82.89/" target="new"
+                  >Real Estate web application</a
+                >
+              </p>
+              <p>
+                Python-Django-PostgreSQL based web application hosted on a
+                digital ocean ubuntu droplet with nginx-gunicorn webserver
+                hosting.
+              </p>
+            </article>
+            <br />
+            <article>
+              <h2>Flask Rest API</h2>
+              <p class="subDetails">
+                <a href="#" target="new">Stores-Items API</a>
+              </p>
+              <p>
+                Python-Flask-SQLAlchemy based Rest API hosted on heroku using
+                gunicorn hosting and PostgreSQL Add-on.
+              </p>
+            </article>
+            <br />
+            <article>
+              <h2>MERN stack SNS</h2>
+              <p class="subDetails">
+                <a
+                  href="https://devconnector-mernapp.herokuapp.com/"
+                  target="new"
+                  >Developer Connector</a
+                >
+              </p>
+              <p>A take/try on social networking web app using MERN stack.</p>
+            </article>
+            <br />
+            <article>
+              <h2>Corona Tracker</h2>
+              <p class="subDetails">
+                <a href="https://covid-19-react-app.herokuapp.com/" target="new"
+                  >Corona Tracker</a
+                >
+              </p>
+              <p>
+                A Corona tracking React web app consuming api and displaying
+                data.
+              </p>
+            </article>
+            <br />
+            <article>
+              <h2>NodeJS-Passport Auth</h2>
+              <p class="subDetails">
+                <a
+                  href="https://nodepassportauth-demo.herokuapp.com/"
+                  target="new"
+                  >Login Page</a
+                >
+              </p>
+              <p>
+                A login page using NodeJS and Passport authentication strategy.
+              </p>
+            </article>
+          </div>
+          <div class="clear"></div>
+        </section>
+
+        <br />
+
+        <section>
+          <div class="sectionTitle">
+            <h1>Key Skills</h1>
+          </div>
+
+          <div class="sectionContent">
+            <ul class="keySkills">
+              <li>Python/Django</li>
+              <li>Python/Flask</li>
+              <li>Node Javascript</li>
+              <li>C#</li>
+              <li>SQL Server</li>
+              <li>PostgreSQL</li>
+              <li>SQLAlchemy</li>
+              <li>Docker Basics</li>
+              <li>Git & Github</li>
+              <li>Heroku</li>
+              <li>Digital Ocean</li>
+              <li>.NET MVC</li>
+              <li>RPA</li>
+            </ul>
+          </div>
+          <div class="clear"></div>
+        </section>
+        <br />
+
+        <section>
+          <div class="sectionTitle">
+            <h1>Education</h1>
+          </div>
+
+          <div class="sectionContent">
+            <article>
+              <h2>Panimalar Engineering College, Chennai-123.</h2>
+              <p class="subDetails">B.E in Mechanical Engineering</p>
+              <p>Graduated on March, 2015 with a CGPA of 8.5 [Distinction]</p>
+              <p>
+                <strong> Project : </strong> Engine emission study on Lemongrass & diesel blend Biofuel.
+              </p>
+              <br /><br />
+            </article>
+
+            <article>
+              <h2>Arulmigu Meenakshi Amman HSS, Chennai-116.</h2>
+              <p class="subDetails">Intermediate [12th] in Science stream.</p>
+              <p>Graduated on March, 2011 with 95 %.</p>
+              <br /><br />
+            </article>
+
+            <article>
+              <h2>Arulmigu Meenakshi Amman HSS, Chennai-116.</h2>
+              <p class="subDetails">State Board [10th]</p>
+              <p>Graduated on March, 2009 with 96 %.</p>
+
+              <br /><br />
+            </article>
+          </div>
+          <div class="clear"></div>
+        </section>
+        <br />
+
+        <section>
+          <div class="sectionTitle">
+            <h1>Languages</h1>
+          </div>
+
+          <div class="sectionContent">
+            <ul class="keySkills">
+              <li>
+                Tamizh :
+                <p class="subDetails">
+                  Proficiency in Reading, writing and speaking.
+                </p>
+              </li>
+              <li>
+                English :
+                <p class="subDetails">
+                  Proficiency in Reading, writing and speaking.
+                </p>
+              </li>
+              <li>
+                Hindi :
+                <p class="subDetails">
+                  Proficiency in Reading, writing.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="clear"></div>
+        </section>
+        <br />
+
+        <section>
+          <div class="sectionTitle">
+            <h1>Hobbies</h1>
+          </div>
+
+          <div class="sectionContent">
+            <ul class="keySkills">
+              <li>Investment Planning.</li>
+              <li>Podcasts.</li>
+            </ul>
+          </div>
+          <div class="clear"></div>
+        </section>
+        <br />
+      </div>
+    </div>
+  </body>
+</html>
