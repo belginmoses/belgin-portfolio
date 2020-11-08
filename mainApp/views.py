@@ -16,7 +16,7 @@ def resume(request):
 
 def about(request):
     about = About.objects
-    return render(request, 'About.html', {'about': about.all()[0], 'projects': Project.objects.all(), 'skills': Skill.objects.all()})
+    return render(request, 'About.html', {'about': about.all()[0], 'projects': Project.objects.all().order_by('id'), 'skills': Skill.objects.all()})
 
 def projectdetails(request, project_id):
     project = get_object_or_404(Project, pk=project_id)

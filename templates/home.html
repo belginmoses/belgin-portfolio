@@ -50,7 +50,7 @@ crossorigin="anonymous">
   }
 </style>
 <!-- Custom styles for this template -->
-<link href="album.css" rel="stylesheet" />
+<link href="/static/css/album.css" rel="stylesheet" />
 </head>
 <body>
 <header>
@@ -82,18 +82,18 @@ crossorigin="anonymous">
 <main role="main">
   <section class="jumbotron text-center">
     <div class="container">
-      <h1>Hi, I'm Belgin. This website developed with Django.</h1>
+      <h1>Hi, I'm Belgin. This website is developed with Django.</h1>
       <p class="lead text-muted">
         I am project associate @ Cognizant. I am a backend developer, looking for a transition.
       </p>
       <p>
         <a
-          href="{% url 'about' %}"
+          href="{% url 'Contact' %}"
           class="btn btn-primary my-2"
           >Reach Me</a
         >
       </p>
-      <img src="{% static 'images/belgin_dp.jpg' %}" height="150" width="150" />
+      <img src="{% static 'images/bel_resume.jpg' %}" height="150" width="150" />
       <br />
       <div class="icons">
         <a href="https://twitter.com/belgin_moses">
