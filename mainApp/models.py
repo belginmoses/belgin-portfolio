@@ -57,6 +57,6 @@ class Job(models.Model):
 
     def summary_img(self):
         if(len(self.summary.split('image_static')) > 1):
-            return self.summary.split('image_static')[1].replace('=', '').strip()
+            return self.summary.split('image_static')[1].strip()
         else:
             return None
